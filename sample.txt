@@ -1,1 +1,14 @@
 sample
+import torch
+
+import torchvision
+
+model = torchvision.models.alexnet(pretrained=False)
+model.classifier[6] = torch.nn.Linear(model.classifier[6].in_features, 2)
+
+
+
+on
+
+model = torchvision.models.alexnet(pretrained=False)
+model.classifier[6] = torch.nn.Linear(model.classifier[6].in_features, 2)
